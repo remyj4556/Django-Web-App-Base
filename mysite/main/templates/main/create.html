@@ -1,9 +1,12 @@
 {% extends "main/base.html" %}
 
-{% block title %} Create New List {% endblock %} 
+{% block title %} Create New List {% endblock %}
+
+{% block header %}
+<h1>Create List</h1>
+{% endblock header %}
 
 {% block content %}
-    <h3>Create Page</h3>
     <form method="post" action="/create/" class="form-group">
         {% csrf_token %}
         <div class="input-group mb-3">
